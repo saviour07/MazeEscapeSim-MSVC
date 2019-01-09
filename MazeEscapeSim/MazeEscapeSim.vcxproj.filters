@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Direction">
+      <UniqueIdentifier>{11028d00-dc18-4e14-8f90-0d2b75f1e0ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{a37ca07f-81c8-4bce-99d9-68d1eaa59741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maze">
+      <UniqueIdentifier>{86193001-f5c7-4773-bfc0-f44399bf2938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{83e3ad1f-c6d5-4c18-8a43-b38abd1292e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Row">
+      <UniqueIdentifier>{994acdef-cf03-4669-bebf-056a8291995d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{620110c5-1d0c-481d-a172-4c268bb85dce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Direction\direction.cpp">
+      <Filter>Direction</Filter>
+    </ClCompile>
+    <ClCompile Include="Maze\maze.cpp">
+      <Filter>Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="Row\row.cpp">
+      <Filter>Row</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Direction\direction.h">
+      <Filter>Direction</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\consolelogger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\ILogger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Maze\maze.h">
+      <Filter>Maze</Filter>
+    </ClInclude>
+    <ClInclude Include="util\rng.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="Row\row.h">
+      <Filter>Row</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
