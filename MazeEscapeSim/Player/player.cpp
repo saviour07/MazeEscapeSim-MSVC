@@ -1,6 +1,6 @@
 #include <sstream>
 #include "player.h"
-#include "../util/rng.h"
+#include "Rng/rng.h"
 #include "../Direction/direction.h"
 
 namespace mes_player

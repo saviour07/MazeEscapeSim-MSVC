@@ -16,9 +16,6 @@
     <Filter Include="Row">
       <UniqueIdentifier>{994acdef-cf03-4669-bebf-056a8291995d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="util">
-      <UniqueIdentifier>{620110c5-1d0c-481d-a172-4c268bb85dce}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Direction\direction.cpp">
@@ -47,9 +44,6 @@
     </ClInclude>
     <ClInclude Include="Maze\maze.h">
       <Filter>Maze</Filter>
-    </ClInclude>
-    <ClInclude Include="util\rng.h">
-      <Filter>util</Filter>
     </ClInclude>
     <ClInclude Include="Row\row.h">
       <Filter>Row</Filter>

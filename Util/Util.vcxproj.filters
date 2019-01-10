@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Rng">
+      <UniqueIdentifier>{6e7adc41-eb28-48df-ab7e-4099fcefd005}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rng\rng.h">
+      <Filter>Rng</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rng\rng.cpp">
+      <Filter>Rng</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
