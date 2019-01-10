@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Player/player.h"
 #include "Maze/maze.h"
-#include "Logger/consolelogger.h"
+#include "consolelogger.h"
 
 bool Simulate(mes_ilogger::ILogger& logger, mes_maze::Maze& maze, mes_player::Player player);
 

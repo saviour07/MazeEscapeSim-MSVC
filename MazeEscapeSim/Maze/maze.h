@@ -2,7 +2,7 @@
 
 #include <vector>
 #include "../Row/row.h"
-#include "../Logger/ILogger.h"
+#include "ILogger.h"
 
 namespace mes_maze
 {

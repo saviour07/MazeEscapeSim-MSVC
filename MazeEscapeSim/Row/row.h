@@ -2,7 +2,7 @@
 
 #include <vector>
 #include "../Direction/direction.h"
-#include "../Logger/ILogger.h"
+#include "ILogger.h"
 
 namespace mes_row
 {

@@ -4,9 +4,6 @@
     <Filter Include="Direction">
       <UniqueIdentifier>{11028d00-dc18-4e14-8f90-0d2b75f1e0ab}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Logger">
-      <UniqueIdentifier>{a37ca07f-81c8-4bce-99d9-68d1eaa59741}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Maze">
       <UniqueIdentifier>{86193001-f5c7-4773-bfc0-f44399bf2938}</UniqueIdentifier>
     </Filter>
@@ -35,12 +32,6 @@
   <ItemGroup>
     <ClInclude Include="Direction\direction.h">
       <Filter>Direction</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger\consolelogger.h">
-      <Filter>Logger</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger\ILogger.h">
-      <Filter>Logger</Filter>
     </ClInclude>
     <ClInclude Include="Maze\maze.h">
       <Filter>Maze</Filter>
