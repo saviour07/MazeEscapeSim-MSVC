@@ -1,5 +1,5 @@
 #include <sstream>
-#include "../Row/row.h"
+#include "row.h"
 #include "Rng/rng.h"
 
 namespace mes_row
