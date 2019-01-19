@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Maze/maze.h"
+#include "maze.h"
 #include "ILogger.h"
 
 namespace mes_player
