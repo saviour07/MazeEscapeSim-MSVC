@@ -1,19 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Player">
-      <UniqueIdentifier>{83e3ad1f-c6d5-4c18-8a43-b38abd1292e5}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Player\player.cpp">
-      <Filter>Player</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Player\player.h">
-      <Filter>Player</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

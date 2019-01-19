@@ -1,7 +1,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-#include "Player/player.h"
+#include "player.h"
 #include "maze.h"
 #include "consolelogger.h"
 
