@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Direction">
-      <UniqueIdentifier>{11028d00-dc18-4e14-8f90-0d2b75f1e0ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Maze">
       <UniqueIdentifier>{86193001-f5c7-4773-bfc0-f44399bf2938}</UniqueIdentifier>
     </Filter>
@@ -15,9 +12,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Direction\direction.cpp">
-      <Filter>Direction</Filter>
-    </ClCompile>
     <ClCompile Include="Maze\maze.cpp">
       <Filter>Maze</Filter>
     </ClCompile>
@@ -30,9 +24,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Direction\direction.h">
-      <Filter>Direction</Filter>
-    </ClInclude>
     <ClInclude Include="Maze\maze.h">
       <Filter>Maze</Filter>
     </ClInclude>

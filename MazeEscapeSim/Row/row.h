@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "../Direction/direction.h"
+#include "direction.h"
 #include "ILogger.h"
 
 namespace mes_row
