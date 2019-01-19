@@ -25,5 +25,10 @@ namespace mes_row
         int mRowNumber = 0;
         bool mIsLastRow = false;
         Directions mRow;
+
+        bool isFirstRow() const { return mRowNumber == 0; }
+        bool isLastRow() const { return mIsLastRow; }
+        bool isFirstDirection(const int colIdx) const { return colIdx == 0; }
+        bool isLastDirection(const int colIdx, const int numberOfCols) const { return colIdx == numberOfCols - 1; }
     };
 }

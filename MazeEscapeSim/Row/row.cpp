@@ -40,8 +40,7 @@ namespace mes_row
         for (int colIdx = 0; colIdx < numberOfCols; ++colIdx)
         {
             mes_direction::Direction dir;
-            if (mRowNumber == 0 || mIsLastRow               // Is first or last row
-            || colIdx == 0 || colIdx == numberOfCols - 1)   // Is first or last direction
+            if (isFirstRow() || isLastRow() || isFirstDirection(colIdx) || isLastDirection(colIdx, numberOfCols))
             {
                 dir.ToOut();
             }
