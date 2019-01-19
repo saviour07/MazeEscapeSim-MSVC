@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "../Row/row.h"
+#include "row.h"
 #include "ILogger.h"
 
 namespace mes_maze

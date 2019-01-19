@@ -7,16 +7,10 @@
     <Filter Include="Player">
       <UniqueIdentifier>{83e3ad1f-c6d5-4c18-8a43-b38abd1292e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Row">
-      <UniqueIdentifier>{994acdef-cf03-4669-bebf-056a8291995d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Maze\maze.cpp">
       <Filter>Maze</Filter>
-    </ClCompile>
-    <ClCompile Include="Row\row.cpp">
-      <Filter>Row</Filter>
     </ClCompile>
     <ClCompile Include="Player\player.cpp">
       <Filter>Player</Filter>
@@ -26,9 +20,6 @@
   <ItemGroup>
     <ClInclude Include="Maze\maze.h">
       <Filter>Maze</Filter>
-    </ClInclude>
-    <ClInclude Include="Row\row.h">
-      <Filter>Row</Filter>
     </ClInclude>
     <ClInclude Include="Player\player.h">
       <Filter>Player</Filter>
