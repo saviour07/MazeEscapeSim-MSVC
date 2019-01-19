@@ -17,7 +17,8 @@ namespace mes_ilogger
                 : Output(output)
             {
             }
-            virtual void Write(const std::wstring& line, const bool endWithNewLine) = 0;
+            virtual void Write(const std::wstring& line) = 0;
+            virtual void WriteLine(const std::wstring& line) = 0;
 
         protected:
             std::wostream& Output;

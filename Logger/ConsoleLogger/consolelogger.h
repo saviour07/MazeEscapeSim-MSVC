@@ -8,6 +8,7 @@ namespace mes_consolelogger
     {
     public:
         ConsoleLogger();
-        void Write(const std::wstring& line, const bool endWithNewLine);
+        void Write(const std::wstring& line);
+        void WriteLine(const std::wstring& line);
     };
 }

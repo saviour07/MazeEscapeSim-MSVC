@@ -22,16 +22,16 @@ namespace mes_maze
             for (const auto& dir : row.GetDirections())
             {
                 const auto name = dir.DirectionName();
-                mLogger.Write(name, false);
+                mLogger.Write(name);
 
                 auto len = name.size();
                 while (len < 6)
                 {
-                    mLogger.Write(L" ", false);
+                    mLogger.Write(L" ");
                     len++;
                 }
             }
-            mLogger.Write(L"", true);
+            mLogger.WriteLine(L"");
         }
     }
 }

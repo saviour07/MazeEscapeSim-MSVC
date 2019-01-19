@@ -19,15 +19,15 @@ int main()
 
     std::wstringstream startYMsg;
     startYMsg << "Start Y: " << startPosition.Y;
-    logger.Write(startYMsg.str(), true);
+    logger.WriteLine(startYMsg.str());
     
     std::wstringstream startXMsg;
     startXMsg << L"Start X: " << startPosition.X;
-    logger.Write(startXMsg.str(), true);
+    logger.WriteLine(startXMsg.str());
 
     if (Simulate(logger, maze, player))
     {
-        logger.Write(L"Out", true);
+        logger.WriteLine(L"Out");
     }
 
     return 0;
@@ -40,18 +40,18 @@ bool Simulate(mes_ilogger::ILogger& logger, mes_maze::Maze& maze, mes_player::Pl
     {
         std::wstringstream turnMsg;
         turnMsg << L"Turn: " << std::to_wstring(++turn);
-        logger.Write(turnMsg.str(), true);
+        logger.WriteLine(turnMsg.str());
         const auto position = player.MoveDirection(maze.Rows);
 
         std::wstringstream newYPosMsg;
         newYPosMsg << L"New Y Pos: " << position.Y;
-        logger.Write(newYPosMsg.str(), true);
+        logger.WriteLine(newYPosMsg.str());
 
         std::wstringstream newXPosMsg;
         newXPosMsg << L"New X Pos: " << position.X;
-        logger.Write(newXPosMsg.str(), true);
+        logger.WriteLine(newXPosMsg.str());
 
-        logger.Write(L"================================", true);
+        logger.WriteLine(L"================================");
     }
     return true;
 }

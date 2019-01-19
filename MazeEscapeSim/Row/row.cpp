@@ -1,4 +1,3 @@
-#include <sstream>
 #include "row.h"
 #include "Rng/rng.h"
 
@@ -6,33 +5,33 @@ namespace mes_row
 {
     void Row::UpdateDirection(const int xPos)
     {
-        std::wstringstream msg;
+        std::wstring msg;
         auto& direction = mRow[xPos];
         if (direction.IsNorth())
         {
-            msg << "Moving NORTH to EAST";
+            msg = L"Moving NORTH to EAST";
             direction.ToEast();
         }
         else if (direction.IsEast())
         {
-            msg << "Moving EAST to SOUTH";
+            msg = L"Moving EAST to SOUTH";
             direction.ToSouth();
         }
         else if (direction.IsSouth())
         {
-            msg << "Moving SOUTH to WEST";
+            msg = L"Moving SOUTH to WEST";
             direction.ToWest();
         }
         else if (direction.IsWest())
         {
-            msg << "Moving WEST to NORTH";
+            msg = L"Moving WEST to NORTH";
             direction.ToNorth();
         }
         else if (direction.IsOut())
         {
-            msg << "OUT - Nothing to do!";
+            msg = L"OUT - Nothing to do!";
         }
-        mLogger.Write(msg.str(), true);
+        mLogger.WriteLine(msg);
     }
 
     void Row::GenerateRow(const int numberOfCols)

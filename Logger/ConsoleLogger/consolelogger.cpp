@@ -8,12 +8,14 @@ namespace mes_consolelogger
     {
     }
 
-    void ConsoleLogger::Write(const std::wstring& line, const bool endWithNewLine)
+    void ConsoleLogger::Write(const std::wstring& line)
     {
         Output << line;
-        if (endWithNewLine)
-        {
-            Output << std::endl;
-        }
+    }
+
+    void ConsoleLogger::WriteLine(const std::wstring& line)
+    {
+        Write(line);
+        Output << std::endl;
     }
 }

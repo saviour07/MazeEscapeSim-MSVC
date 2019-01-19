@@ -27,9 +27,8 @@ namespace mes_player
         const auto dirs = rows.at(mCurrentYPosition).GetDirections();
         const auto dir = dirs.at(mCurrentXPosition);
 
-        std::wstringstream directionMsg;
-        directionMsg << L"Direction Name: " << dir.DirectionName();
-        mLogger.Write(directionMsg.str(), true);
+        const std::wstring msg(L"Direction Name: " + dir.DirectionName());
+        mLogger.WriteLine(msg);
 
         return dir.IsOut();
     }
@@ -42,36 +41,35 @@ namespace mes_player
         auto dirs = rows.at(mCurrentYPosition).GetDirections();
         PrintDirections(dirs);
 
-        std::wstringstream directionMsg;
-
+        std::wstring msg;
         const auto direction = dirs.at(mCurrentXPosition);
         if (direction.IsNorth())
         {
-            directionMsg << L"Moving UP";
+            msg = L"Moving UP";
             mCurrentYPosition--;
         }
         if (direction.IsEast())
         {
-            directionMsg << L"Moving RIGHT";
+            msg = L"Moving RIGHT";
             mCurrentXPosition++;
         }
         if (direction.IsSouth())
         {
-            directionMsg << L"Moving DOWN";
+            msg = L"Moving DOWN";
             mCurrentYPosition++;
         }
         if (direction.IsWest())
         {
-            directionMsg << L"Moving LEFT";
+            msg = L"Moving LEFT";
             mCurrentXPosition--;
         }
         if (direction.IsOut())
         {
-            directionMsg << L"Moving OUT";
+            msg = L"Moving OUT";
             mCurrentXPosition = 0;
             mCurrentYPosition = 0;
         }
-        mLogger.Write(directionMsg.str(), true);
+        mLogger.WriteLine(msg);
 
         rows.at(previousYPos).UpdateDirection(previousXPos);
 
@@ -85,10 +83,9 @@ namespace mes_player
     {
         for (const auto& dir : directions)
         {
-            std::wstringstream msg;
-            msg << dir.DirectionName() << L" ";
-            mLogger.Write(msg.str(), false);
+            const std::wstring msg(dir.DirectionName() + L" ");
+            mLogger.Write(msg);
         }
-        mLogger.Write(L"", true);
+        mLogger.WriteLine(L"");
     }
 }
